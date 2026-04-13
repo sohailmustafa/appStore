@@ -1,5 +1,5 @@
 import 'package:appstore/common/appTextField.dart';
-import 'package:appstore/modules/home/view/home_screen.dart';
+import 'package:appstore/modules/home/view/subhome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -21,7 +21,7 @@ class MainHome extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Get.to(HomeScreen());
+                      Get.to(SubhomeScreen());
                     },
                     child: Container(
                       height: 50,
