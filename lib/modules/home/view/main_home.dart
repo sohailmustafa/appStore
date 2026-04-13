@@ -24,7 +24,7 @@ class MainHome extends StatelessWidget {
                       Get.to(SubhomeScreen());
                     },
                     child: Container(
-                      height: 60,
+                      height: 50,
                       width: 50,
                       decoration: BoxDecoration(
                         color: const Color(0xFFF0F5FA),
