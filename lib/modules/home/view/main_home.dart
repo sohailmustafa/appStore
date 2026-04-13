@@ -80,7 +80,6 @@ class MainHome extends StatelessWidget {
               ),
             ),
 
-            // 🔥 ONLY CHANGE HERE (THIS FIXES OVERFLOW)
             Expanded(
               child: ListView(
                 padding: EdgeInsets.zero,
