@@ -1,4 +1,5 @@
 // import 'package:appstore/modules/home/view/main_home.dart';
+import 'package:appstore/modules/home/view/burgers.dart';
 import 'package:appstore/modules/home/view/product_details.dart';
 // import 'package:appstore/modules/home/view/search_view.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
      debugShowCheckedModeBanner: false,
-      home:  ProductDetails(),
+      home:  Burgers(),
     );
   }
 }
