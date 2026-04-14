@@ -43,55 +43,51 @@ class ProductDetails extends StatelessWidget {
                     ],
                   ),
 
-                  SizedBox(
-                    height: 210,
-                    child: Stack(
-                      alignment: Alignment.bottomCenter,
-                      children: [
-                        Container(
-                          width: double.infinity,
-                          height: 170,
-                          decoration: BoxDecoration(
-                            
-                            color: Color(0xFFFFAA5F),
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              Container(
-                                width: 50,
-                                height: 50,
-                                margin: EdgeInsets.fromLTRB(0, 0, 25, 20),
-                                decoration: BoxDecoration(
-                                  color: Colors.white.withValues(alpha: 0.5),
-                                  borderRadius: BorderRadius.circular(100),
-                                ),
-
-                                child: Icon(
-                                  Icons.favorite_border_outlined,
-                                  size: 25,
-                                  color: Colors.white.withValues(alpha: 1),
-                                ),
+                  Stack(
+                    alignment: Alignment.bottomCenter,
+                    children: [
+                      Container(
+                        width: double.infinity,
+                        height: 170,
+                        margin: EdgeInsets.fromLTRB(0, 50, 0, 0),
+                        decoration: BoxDecoration(
+                          
+                          color: Color(0xFFFFAA5F),
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                  
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Container(
+                              width: 50,
+                              height: 50,
+                              margin: EdgeInsets.fromLTRB(0, 0, 25, 20),
+                              decoration: BoxDecoration(
+                                color: Colors.white.withValues(alpha: 0.5),
+                                borderRadius: BorderRadius.circular(100),
                               ),
-                            ],
-                          ),
+                  
+                              child: Icon(
+                                Icons.favorite_border_outlined,
+                                size: 25,
+                                color: Colors.white.withValues(alpha: 1),
+                              ),
+                            ),
+                          ],
                         ),
-                        Positioned(
-                          top: 0,
-                          bottom: 0,
-                          right: 0,
-                          left: 0,
-                          child: Image.asset(
-                            "assets/images/pizza2.png",
-                            width: 190,
-                            height: 190,
-                          ),
+                      ),
+                      Positioned(
+                        top: 0,
+                       
+                        child: Image.asset(
+                          "assets/images/pizza2.png",
+                          width: 200,
+                          height: 200,
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                   SizedBox(height: 20),
                   Container(
@@ -210,9 +206,9 @@ class ProductDetails extends StatelessWidget {
                       SizedBox(width: 25),
                       sizeCard(false, '10"'),
                       SizedBox(width: 20),
-                      sizeCard(true, '14""'),
+                      sizeCard(true, '14"'),
                       SizedBox(width: 20),
-                      sizeCard(false, '16""'),
+                      sizeCard(false, '16"'),
                     ],
                   ),
 
