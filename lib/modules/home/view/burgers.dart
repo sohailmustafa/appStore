@@ -41,7 +41,7 @@ class Burgers extends StatelessWidget {
                       borderRadius: BorderRadius.circular(100),
                     ),
 
-                    padding: EdgeInsets.fromLTRB(15,0,5,0),
+                    padding: EdgeInsets.fromLTRB(15, 0, 5, 0),
 
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.end,
@@ -55,7 +55,7 @@ class Burgers extends StatelessWidget {
                             color: Colors.black87,
                           ),
                         ),
-                        SizedBox(width: 0,),
+                        SizedBox(width: 0),
                         Icon(
                           Icons.arrow_drop_down_rounded,
                           size: 30,
@@ -87,21 +87,22 @@ class Burgers extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-              Text(
-                'Popular Burgers',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.black87,
-                ),
-              ),
-              SizedBox(height: 20),
+
               Expanded(
                 child: SingleChildScrollView(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
+                      Text(
+                        'Popular Burgers',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black87,
+                        ),
+                      ),
+                      SizedBox(height: 20),
                       GridView(
                         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
@@ -117,28 +118,27 @@ class Burgers extends StatelessWidget {
                             "Beef Burger",
                             "Ottara Coffe House",
                             "\$70",
-
                           ),
 
                           itemCard(
                             "assets/images/cheese.png",
                             "Cheese Burger",
                             "Cafenio Coffe Club",
-                            "\$60"
+                            "\$60",
                           ),
 
                           itemCard(
                             "assets/images/veg.png",
                             "Veg Burger",
                             "Ottara Coffe House",
-                            "\$50"
+                            "\$50",
                           ),
 
                           itemCard(
                             "assets/images/burger.png",
                             "Burger Bistro",
                             "Ottara Coffe House",
-                            "\$65"
+                            "\$65",
                           ),
                         ],
                       ),
@@ -193,7 +193,12 @@ class Burgers extends StatelessWidget {
     );
   }
 
-  Widget itemCard(String imagePath, String title, String subTitle, String price) {
+  Widget itemCard(
+    String imagePath,
+    String title,
+    String subTitle,
+    String price,
+  ) {
     return Stack(
       alignment: Alignment.bottomCenter,
       children: [
@@ -222,16 +227,16 @@ class Burgers extends StatelessWidget {
                 title,
                 style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
               ),
-                Text(
-                    subTitle,
-                    style: TextStyle(
-                      fontSize: 12,
-                      letterSpacing: 0.1,
-                      fontWeight: FontWeight.w400,
-                      color: Colors.grey,
-                    ),
-                  ),
-                  SizedBox(height: 5,),
+              Text(
+                subTitle,
+                style: TextStyle(
+                  fontSize: 12,
+                  letterSpacing: 0.1,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.grey,
+                ),
+              ),
+              SizedBox(height: 5),
               Row(
                 children: [
                   Text(
@@ -250,14 +255,15 @@ class Burgers extends StatelessWidget {
                       color: Color(0xFFFF7622),
                       borderRadius: BorderRadius.circular(100),
                     ),
-                    
-                    child:  Icon(Icons.add, color: Colors.white, size: 20,))
+
+                    child: Icon(Icons.add, color: Colors.white, size: 20),
+                  ),
                 ],
               ),
             ],
           ),
         ),
-        Positioned(top:0, child: Image.asset(imagePath, height: 100)),
+        Positioned(top: 0, child: Image.asset(imagePath, height: 100)),
       ],
     );
   }
@@ -324,7 +330,6 @@ class Burgers extends StatelessWidget {
   Widget _ratingComponent(IconData icon, String text) {
     return Row(
       children: [
-        
         Icon(
           icon,
           size: 25,
